@@ -1,0 +1,14 @@
+{
+  "name": "dialog-react-pwa",
+  "version": "1.0.0",
+  "repository": "https://github.com/andersonhese/dialog-react-pwa.git",
+  "author": "Anderson Hese <anderson.hese@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"cd ./server && yarn dev \" \"cd ./client && yarn start \"",
+    "install-all": "yarn && concurrently \"cd ./server && yarn \" \"cd ./client && yarn \""
+  },
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
