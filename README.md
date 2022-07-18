@@ -100,9 +100,7 @@ Deverá executar com `yarn start` na porta 4000
 - Lembrar: não é necessário entrar em pastas usando comandos como `cd`, todos os comandos devem ser executados na pasta raiz, pasta que contem as pastas `client` e `server`.
 
 - CURL:
+
 ``
-  curl --request POST \
-      --header 'content-type: application/json' \
-      --url http://localhost:4001/graphql \
-      --data '{"query":"query  {\n  list (name: \"ci w\") {\n    _id\n    index\n    picture\n    age\n    eyeColor\n    name\n    company\n    email\n    phone\n    friends {\n      _id\n      index\n      picture\n      age\n      eyeColor\n      name\n      company\n      email\n      phone\n    }\n    greeting\n  }\n}","variables":{}}'
+  curl --request POST       --header 'content-type: application/json'       --url http://localhost:4001/graphql       --data '{"query":"query  {\n  list (name: \"ci w\") {\n    _id\n    index\n    picture\n    age\n    eyeColor\n    name\n    company\n    email\n    phone\n    friends {\n      _id\n      index\n      picture\n      age\n      eyeColor\n      name\n      company\n      email\n      phone\n    }\n    greeting\n  }\n}","variables":{}}'
 ``
